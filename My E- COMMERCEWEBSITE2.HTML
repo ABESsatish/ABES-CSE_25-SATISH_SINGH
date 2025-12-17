@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <style>
+        body{
+            background-color: rgb(217, 217, 217);
+            font-family: sans-serif;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        .header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 35px;
+            background-color: rgb(240, 239, 239);
+            margin-top: 0;
+            font-size: 25px;
+            padding: 20px;
+        }
+        .sideTools a:hover{
+            color: aqua;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            height: 100px;
+            background-color: white;
+            margin: 6px;
+            background: linear-gradient(135deg, #ff7e5f, #feb47b);
+            color: #333333; 
+            border-radius: 7px;
+        }
+        .categories{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: white;
+            height: 90px;
+            align-items: center;
+            margin: 6px;
+            border-radius: 7px;
+        }
+        .cat{
+            display: flex;
+            flex-direction: column;
+        }
+        .cards{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 20px;
+            border-radius: 7px;
+            margin: 10px;
+        }
+        .items{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(128, 128, 128, 0.2);
+            padding: 10px;
+            border-radius: 14px;
+        }
+        .item {
+            height: 110px;
+            border-radius: 14px;
+            background: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f1f1f1;
+            font-size: 18px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.5s ease;
+            box-shadow: 0 4px 5px black;
+            padding: 20px;
+        }
+
+        .item:hover {
+            color: #111;
+            transition: all 0.5s ease;
+            font-weight: 600;
+        }
+        .item-content{
+            text-align:center;
+            font-size:14px;
+            color: black;
+        }
+        .item-content img{
+            width:60px;
+            height:60px;
+            object-fit:contain;
+            margin-bottom:6px;
+        }
+        .site-footer {
+            background-color: #111;
+            color: #ccc;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .site-footer a {
+            color: #aaa;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .site-footer a:hover {
+            color: #fff;
+        }
+        .footer-links {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="home">
+        <div><b>My&nbsp;Shop</b></div>
+
+         <div style="display: flex;">
+         <input type="text"  placeholder="Search an item" style="width: 400px;height: 25px;border: 2px solid black;">
+         <button type="submit" style="border: 2px solid black;background-color: orange;cursor: pointer;" >🔍</button>
+         </div>
+         <div class="sideTools" style="display: flex;gap: 40px;justify-content: center;align-items: center;">
+            <div><a href="#Categories">🛒</a></div>
+            <div style="margin-top: 8px;"><a href="#" style="font-size: 20px;"><img src="https://w7.pngwing.com/pngs/205/731/png-transparent-default-avatar-thumbnail.png" height="30px" width="30px"></a></div>
+        </div>
+    </div>
+    <div class="categories" id="categories"></nav>
+        <div class="cat"><a href="#laptops"><img src="https://png.pngtree.com/png-clipart/20230927/original/pngtree-laptop-color-illustration-png-image_13136754.png" width="50px" height="50px"><br>Laptops</a></div>
+        <div class="cat"><a href="#phones"><img src="https://png.pngtree.com/png-clipart/20240330/original/pngtree-essential-device-for-every-day-mobile-with-blank-screen-to-put-png-image_14718423.png" width="50px" height="50px"><br>Phones</a></div>
+        <div class="cat"><a href="#fridges"><img src="https://png.pngtree.com/png-vector/20240203/ourmid/pngtree-3d-illustration-fridge-refrigerator-png-image_11593260.png" width="50px" height="50px"><br>Fridges</a></div>
+        <div class="cat"><a href="#watches">&nbsp;<img src="https://png.pngtree.com/png-vector/20230906/ourmid/pngtree-wristwatch-analog-classic-brown-leather-strap-watch-png-image_10001801.png" width="50px" height="50px"><br>Watches</a></div>
+        <div class="cat"><a href="#tvs"><img src="https://png.pngtree.com/png-clipart/20250121/original/pngtree-digital-smart-tv-clipart-vector-png-image_19967153.png" width="50px" height="50px"><br>&nbsp;&nbsp;TVs</a></div>
+    </div>
+    <div class="content">
+        <div><span style="font-weight: bold;font-size: 40px;">SHOP NOW</span></div>
+        <div style="display: flex; justify-content: space-evenly;gap: 50px;font-size: 20px;">
+            <div>Fast Delivery</div>
+            <div>Cheap Rates</div>
+            <div>24/7 Support</div>
+        </div>
+    </div>
+    
+    <div id="laptops" class="cards" style="background:linear-gradient(135deg,#1b1b2f,#3a3a6a,#0f3460);">
+        <span style="color:white;font-size:28px;font-weight:600;letter-spacing:4px;">Laptops</span>
+        <div class="items">
+            <div class="item"><div class="item-content">
+                <img src="https://www.asus.com/media/Odin/Websites/global/Series/9.png"><br>
+                <b>MacBook Air</b><br>M2 • 8GB RAM<br><span class="price">₹1,14,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://dlcdnwebimgs.asus.com/gain/647c3064-2f3e-46da-a1ad-f865ee0fb4bb/"><br>
+                <b>ASUS ROG</b><br>i7 • RTX 3060<br><span class="price">₹1,29,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://dlcdnwebimgs.asus.com/gain/642a0c03-11f6-42df-8573-5ad544759f1a/w800"><br>
+                <b>HP Pavilion</b><br>Ryzen 5<br><span class="price">₹69,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://www.asus.com/media/Odin/Websites/my/ProductLine/20240513032758/P_setting_xxx_0_90_end_185.png"><br>
+                <b>Dell XPS</b><br>i7 • OLED<br><span class="price">₹1,59,999</span>
+            </div></div>
+        </div>
+    </div>
+    <div id="phones" class="cards" style="background:linear-gradient(135deg,#1b1b2f,#3a3a6a,#0f3460);">
+        <span style="color:white;font-size:28px;font-weight:600;letter-spacing:4px;">Phones</span>
+        <div class="items">
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20240312/original/pngtree-mobile-frame-png-without-background-png-image_14571599.png"><br>
+                <b>iPhone 14</b><br>A15 • 128GB<br><span class="price">₹79,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-vector/20240204/ourmid/pngtree-smart-phone-mockup-png-png-image_11608390.png"><br>
+                <b>Samsung S23</b><br>Snapdragon 8 Gen 2<br><span class="price">₹74,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-vector/20230912/ourmid/pngtree-smart-phone-mockup-png-png-image_10025992.png"><br>
+                <b>OnePlus 11</b><br>16GB • 256GB<br><span class="price">₹56,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20240109/original/pngtree-purple-latest-mobile-phone-iphone-mobile-phone-mockup-png-image_14055319.png"><br>
+                <b>Pixel 7</b><br>Tensor G2<br><span class="price">₹49,999</span>
+            </div></div>
+        </div>
+    </div>
+    <div id="fridges" class="cards" style="background:linear-gradient(135deg,#1e3c72,#2a5298);">
+        <span style="color:white;font-size:28px;font-weight:600;letter-spacing:4px;">Fridges</span>
+        <div class="items">
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20221031/pngtree-side-by-side-fridge-on-white-background-deep-side-by-side-freezer-photo-image_25656694.jpg"><br>
+                <b>LG Double Door</b><br>260L Inverter<br><span class="price">₹34,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20250104/original/pngtree-minimalist-white-refrigerator-illustration-png-image_18710913.png"><br>
+                <b>Samsung Smart</b><br>Wi-Fi Enabled<br><span class="price">₹38,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20250207/original/pngtree-a-white-fridge-or-refrigerator-png-image_19649263.png"><br>
+                <b>Whirlpool</b><br>Frost Free<br><span class="price">₹29,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/thumb_back/fh260/background/20221031/pngtree-side-by-side-fridge-on-white-background-deep-side-by-side-freezer-photo-image_25656694.jpg"><br>
+                <b>Haier</b><br>3★ Energy<br><span class="price">₹27,999</span>
+            </div></div>
+        </div>
+    </div>
+    <div id="watches" class="cards" style="background:linear-gradient(135deg,#42275a,#734b6d);">
+        <span style="color:white;font-size:28px;font-weight:600;letter-spacing:4px;">Watches</span>
+        <div class="items">
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20250106/original/pngtree-a-white-watch-on-transparent-background-png-image_18814006.png"><br>
+                <b>Apple Watch</b><br>GPS • Series 8<br><span class="price">₹41,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://t3.ftcdn.net/jpg/02/32/15/14/360_F_232151497_esQFjIEsYXcgBNzTaCHi4CvNgbTpDurh.jpg"><br>
+                <b>Galaxy Watch</b><br>AMOLED<br><span class="price">₹28,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://t4.ftcdn.net/jpg/00/42/01/93/360_F_42019313_QLNWHp7orxChBcrdyxpbDmLj0NsLNLQd.jpg"><br>
+                <b>Fossil</b><br>Leather Strap<br><span class="price">₹9,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-vector/20240517/ourmid/pngtree-beautiful-men-watch-png-image_12473147.png"><br>
+                <b>Titan</b><br>Analog Steel<br><span class="price">₹5,999</span>
+            </div></div>
+        </div>
+    </div>
+    <div id="tvs" class="cards" style="background:linear-gradient(135deg,#000428,#004e92);">
+        <span style="color:white;font-size:28px;font-weight:600;letter-spacing:4px;">TVs</span>
+        <div class="items">
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20241210/original/pngtree-led-television-isolated-white-background-png-image_17776454.png"><br>
+                <b>Samsung 4K</b><br>55” Smart<br><span class="price">₹54,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://png.pngtree.com/png-clipart/20250104/original/pngtree-modern-led-tv-isolate-on-transparent-background-png-image_18711530.png"><br>
+                <b>LG OLED</b><br>Dolby Vision<br><span class="price">₹89,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://t3.ftcdn.net/jpg/04/92/79/28/360_F_492792808_wlEaGYoZxRAirR17W9ZItf5EgPXjzeo3.jpg"><br>
+                <b>Sony Bravia</b><br>XR Processor<br><span class="price">₹74,999</span>
+            </div></div>
+            <div class="item"><div class="item-content">
+                <img src="https://media.istockphoto.com/id/2135726791/vector/smart-tv-led-screen-mockup-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=RUFm2nrGT7LY8JT5JJsytXl1739_knnj8MJGMYaO7ts="><br>
+                <b>OnePlus TV</b><br>QLED 120Hz<br><span class="price">₹49,999</span>
+            </div></div>
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>&copy; 2025 My Shop. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="#">Privacy Policy</a> ·
+                <a href="#">Terms of Service</a> ·
+                <a href="#">Contact</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
