@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Application Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .leave-form {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 400px;
+        }
+
+        .leave-form h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .leave-form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .leave-form input,
+        .leave-form textarea,
+        .leave-form select {
+            width: 100%;
+            padding: 8px 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .leave-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .leave-form button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <form class="leave-form">
+        <h2>Leave Application Form</h2>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="roll">Roll Number</label>
+        <input type="text" id="roll" name="roll" placeholder="Your roll number" required>
+
+        <label for="branch">Branch</label>
+        <input type="text" id="branch" name="branch" placeholder="Your branch" required>
+
+        <label for="from-date">From Date</label>
+        <input type="date" id="from-date" name="from-date" required>
+
+        <label for="to-date">To Date</label>
+        <input type="date" id="to-date" name="to-date" required>
+
+        <label for="reason">Reason for Leave</label>
+        <textarea id="reason" name="reason" rows="4" placeholder="Enter reason for leave" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .attendance-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .attendance-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .present {
+            background-color: #c8e6c9;
+        }
+
+        .absent {
+            background-color: #ffcdd2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="attendance-container">
+        <h2>Attendance List</h2>
+        <table>
+            <tr>
+                <th>Roll Number</th>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Status</th>
+            </tr>
+            <tr class="present">
+                <td>101</td>
+                <td>John Doe</td>
+                <td>Computer Science</td>
+                <td>Present</td>
+            </tr>
+            <tr class="absent">
+                <td>102</td>
+                <td>Jane Smith</td>
+                <td>Mechanical</td>
+                <td>Absent</td>
+            </tr>
+            <tr class="present">
+                <td>103</td>
+                <td>Robert Brown</td>
+                <td>Electrical</td>
+                <td>Present</td>
+            </tr>
+            <tr class="present">
+                <td>104</td>
+                <td>Emily Davis</td>
+                <td>Civil</td>
+                <td>Present</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>The Bharat Daily — News Front Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; background:#f5f5f5; color:#222; }
+    header { background:#c62828; color:white; padding:15px; }
+    header h1 { margin:0; font-size:24px; }
+    nav { margin-top:8px; }
+    nav a { color:white; margin-right:15px; text-decoration:none; font-weight:bold; }
+    .container { max-width:1100px; margin:20px auto; padding:0 15px; }
+    .main-news { background:white; padding:20px; border-radius:8px; margin-bottom:20px; }
+    .main-news img { width:100%; border-radius:8px; }
+    .main-news h2 { margin-top:15px; color:#c62828; }
+    .grid { display:grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap:20px; }
+    .card { background:white; padding:15px; border-radius:8px; }
+    .card img { width:100%; border-radius:6px; }
+    .card h3 { margin:10px 0 5px; font-size:18px; color:#c62828; }
+    footer { text-align:center; padding:15px; background:#222; color:white; margin-top:30px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>The Bharat Daily</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">India</a>
+      <a href="#">World</a>
+      <a href="#">Business</a>
+      <a href="#">Sports</a>
+      <a href="#">Lifestyle</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <section class="main-news">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1200" alt="Mumbai rains">
+      <h2>Mumbai Rains Bring Relief After Heatwave</h2>
+      <p>Monsoon showers lashed Mumbai and neighbouring areas this morning, providing much-needed relief to residents after a week of scorching heat...</p>
+      <a href="#">Read more</a>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJF1PCeq0W_V8AhiuREGaoL0ZN8iG2fPsRqw&s" alt="Parliament">
+        <h3>Parliament Session Highlights</h3>
+        <p>Key bills were introduced today, focusing on economic reforms and digital inclusion...</p>
+      </div>
+      <div class="card">
+        <img src="https://th-i.thgim.com/public/incoming/6wgt8y/article70050207.ece/alternates/FREE_1200/2025-09-14T175244Z_1603663459_UP1EL9E1DNU2K_RTRMADP_3_CRICKET-ASIACUP-IND-PAK.JPG" alt="Cricket match">
+        <h3>India Wins T20 Match</h3>
+        <p>India Wins against Pakistan in T20 Asia Cup 2025 with a thrilling victory in Dubai......</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=600" alt="Stock market">
+        <h3>Markets End on Positive Note</h3>
+        <p>Sensex surged 450 points today amid positive global cues and banking stocks rally...</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=600" alt="Festival">
+        <h3>Ganesh Chaturthi Celebrations</h3>
+        <p>Streets across Maharashtra lit up with grand celebrations marking Ganesh Chaturthi...</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    © 2025 The Bharat Daily — All Rights Reserved
+  </footer>
+</body>
+</html>

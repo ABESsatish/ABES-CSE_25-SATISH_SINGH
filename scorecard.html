@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Scorecard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .scorecard {
+            background-color: #fff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            width: 500px;
+        }
+
+        .scorecard h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .student-info {
+            margin-bottom: 20px;
+        }
+
+        .student-info div {
+            margin: 5px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .total {
+            font-weight: bold;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scorecard">
+        <h2>Student Scorecard</h2>
+
+        <div class="student-info">
+            <div><strong>Name:</strong> John Doe</div>
+            <div><strong>Roll Number:</strong> 101</div>
+            <div><strong>Branch:</strong> Computer Science</div>
+        </div>
+
+        <table>
+            <tr>
+                <th>Subject</th>
+                <th>Marks Obtained</th>
+                <th>Maximum Marks</th>
+            </tr>
+            <tr>
+                <td>Mathematics</td>
+                <td>95</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Physics</td>
+                <td>90</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>Chemistry</td>
+                <td>85</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td>88</td>
+                <td>100</td>
+            </tr>
+            <tr class="total">
+                <td>Total</td>
+                <td>358</td>
+                <td>400</td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
