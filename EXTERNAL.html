@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+
+    <!-- Online CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Grid Container */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Product Card */
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        button {
+            background: blue;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* 📱 Tablet View */
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        /* 📱 Mobile View */
+        @media (max-width: 480px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Responsive Product Grid</h1>
+
+    <div class="grid">
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Product 1</h3>
+            <p class="price">₹500</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Product 2</h3>
+            <p class="price">₹700</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Product 3</h3>
+            <p class="price">₹900</p>
+            <button>Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/200" alt="Product">
+            <h3>Product 4</h3>
+            <p class="price">₹1200</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+
+</body>
+</html>
